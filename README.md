@@ -102,6 +102,10 @@ Scale out the instance number of slaves
 ```
 docker-compose scale slave=2
 ```
+Or set the number of instances when the cluster start up
+```
+docker-compose up --scale master=3 --scale slave=3 --scale sentinel=3
+```
 
 Check the status of redis cluster
 
